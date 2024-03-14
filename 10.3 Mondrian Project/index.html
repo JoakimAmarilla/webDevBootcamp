@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    html{
+    }
+
+    .container{
+      width: 748px;
+      height: 748px;
+
+      display: grid;
+    	grid-template-rows: 414px 130px 155px 20px;
+	    grid-template-columns: 320px 198px 153px 50px;
+
+      background-color: #000;
+      gap: 9px
+    }
+
+     div{
+      background-color: darkgray;
+      /* background-color: #f0f1ec;*/
+    }
+
+    .div{
+      border: 15px solid #000;
+    }
+
+    .red{
+      background-color: #E72F24;
+    }
+
+    .blue{
+      background-color: #004592;
+    }
+
+    .yellow{
+      background-color: #F9d01e;
+    }
+
+    .black{
+      background-color: #232629;
+    }
+
+    .e1x2{
+      grid-column: span 3;
+    }
+
+    .e2x1{
+      grid-row: span 2;
+    }
+
+    .e2x2{
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    .e3x4{
+      grid-row: span 2;
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red 1x1"></div>
+    <div class="e1x2"></div>
+
+    <div class="e2x1"></div>
+    <div class="e2x2"></div>
+    <div class="blue e2x4"></div>
+
+    <div class="e3x4"></div>
+
+    <div class="e4x1"></div>
+    <div class="e4x2 yellow"></div>
+    <div class="e4x3 black"></div>
+  </div>
+
+</body>
+
+</html>
